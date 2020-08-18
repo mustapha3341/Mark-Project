@@ -6,7 +6,7 @@ const jobSchema = new Schema({
 		type: String,
 		required: true,
 	},
-	location: {
+	job_location: {
 		type: String,
 		required: true,
 	},
@@ -18,9 +18,35 @@ const jobSchema = new Schema({
 		type: String,
 		required: true,
 	},
-	description: {
+	job_description: {
 		type: String,
 		required: true,
+	},
+	company_name: {
+		type: String,
+		required: true,
+	},
+	company_tagline: {
+		type: String,
+		required: true,
+	},
+	company_description: {
+		type: String,
+		required: true,
+	},
+	company_website: {
+		type: String,
+		required: true,
+	},
+	company_website_fb: {
+		type: String,
+	},
+	company_website_tw: {
+		type: String,
+	},
+	date: {
+		type: Date,
+		default: Date.now,
 	},
 });
 
