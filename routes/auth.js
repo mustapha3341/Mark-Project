@@ -25,6 +25,8 @@ router.post("/", async (req, res) => {
 	});
 
 	newUser.save();
+
+	res.redirect("/");
 });
 
 module.exports = router;
